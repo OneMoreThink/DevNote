@@ -6,6 +6,14 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF656C672D19AAA200F523EC /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = AF656C662D19AAA200F523EC /* RxBlocking */; };
+		AF656C692D19AAA200F523EC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AF656C682D19AAA200F523EC /* RxCocoa */; };
+		AF656C6B2D19AAA200F523EC /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = AF656C6A2D19AAA200F523EC /* RxRelay */; };
+		AF656C6D2D19AAA200F523EC /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AF656C6C2D19AAA200F523EC /* RxSwift */; };
+		AF656C6F2D19AAA200F523EC /* RxTest in Frameworks */ = {isa = PBXBuildFile; productRef = AF656C6E2D19AAA200F523EC /* RxTest */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AF656B5B2D13E1D500F523EC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF656C6D2D19AAA200F523EC /* RxSwift in Frameworks */,
+				AF656C6B2D19AAA200F523EC /* RxRelay in Frameworks */,
+				AF656C692D19AAA200F523EC /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF656C6F2D19AAA200F523EC /* RxTest in Frameworks */,
+				AF656C672D19AAA200F523EC /* RxBlocking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +138,9 @@
 			);
 			name = DevNote;
 			packageProductDependencies = (
+				AF656C682D19AAA200F523EC /* RxCocoa */,
+				AF656C6A2D19AAA200F523EC /* RxRelay */,
+				AF656C6C2D19AAA200F523EC /* RxSwift */,
 			);
 			productName = DevNote;
 			productReference = AF656B442D13E1D300F523EC /* DevNote.app */;
@@ -148,6 +164,8 @@
 			);
 			name = DevNoteTests;
 			packageProductDependencies = (
+				AF656C662D19AAA200F523EC /* RxBlocking */,
+				AF656C6E2D19AAA200F523EC /* RxTest */,
 			);
 			productName = DevNoteTests;
 			productReference = AF656B5A2D13E1D500F523EC /* DevNoteTests.xctest */;
@@ -208,6 +226,9 @@
 			);
 			mainGroup = AF656B3B2D13E1D300F523EC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF656B452D13E1D300F523EC /* Products */;
 			projectDirPath = "";
@@ -579,6 +600,45 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF656C662D19AAA200F523EC /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
+		};
+		AF656C682D19AAA200F523EC /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		AF656C6A2D19AAA200F523EC /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		AF656C6C2D19AAA200F523EC /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		AF656C6E2D19AAA200F523EC /* RxTest */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF656C652D19AAA200F523EC /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxTest;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF656B3C2D13E1D300F523EC /* Project object */;
 }
